@@ -1,4 +1,7 @@
 {
+  "ts-node": {
+    "swc": true
+  },
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -24,6 +27,5 @@
       "config/*": ["config/*"]
     }
   },
-  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
