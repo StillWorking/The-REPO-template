@@ -1,10 +1,11 @@
+import { db } from '../db';
 import { JsonController, Param, Body, Get, Post, Put, Delete } from 'routing-controllers';
 
 @JsonController()
 export class PokemonController {
     @Get('/api/pokemon')
     getAll() {
-        return 'This action returns all pokemon';
+        return db.pokemon.all()
     }
 
     @Get('/api/pokemon/:id')

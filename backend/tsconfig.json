@@ -1,7 +1,4 @@
 {
-  "ts-node": {
-    "swc": true
-  },
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

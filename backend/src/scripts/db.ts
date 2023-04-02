@@ -23,4 +23,10 @@ rakeDb(options, {
     baseTablePath: '../lib/BaseTable.ts',
     mainFilePath: '../db.ts',
   }),
+  commands: {
+    async seed(options) {
+      const { seed } = await import('../database/seeds/seed')
+      await seed()
+    },
+  },
 })
